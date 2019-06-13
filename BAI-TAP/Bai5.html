@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+        function kiemtra(n) {
+            let star =["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe" ,"Regulus"];
+            let giatri = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major","Leo"];
+            let position = star.indexOf(n);
+            if (position!=-1){
+                return giatri[position];
+            }
+            else return ("khong co");
+        }
+        var  n = prompt("Nhập vào từ cần tìm");
+        ketqua = kiemtra(n);
+        alert(ketqua);
+    </script>
+</body>
+</html>
